@@ -1,0 +1,201 @@
+.menu 
+    {
+    background-color: rgb(32, 27, 27);
+    overflow: hidden;
+    width: 1700px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top:20px;
+    }
+.logo
+    {
+    width: 200x;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -55px;
+    }
+.menu a 
+    {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+  
+.menu a:hover 
+    {
+    background-color: rgb(12, 137, 136);
+    color: black;
+    }
+  
+.menu a.active 
+    {
+    text-decoration: underline;
+    color: white;
+    }
+
+.Invitation p 
+    {
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    }
+
+.Invitation
+    {
+    max-width: 50%;
+    background:rgba(0,0,0,0.5);
+    padding: 10%;
+    padding-top:2%;
+    padding-bottom:5%;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: relative;
+    }
+
+input[type=submit]
+    {
+    background-color: rgb(12, 137, 136);
+    width: 220px;
+    height: 70px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    }
+
+.amenities
+    {
+    max-width: 60%;
+    background:rgba(0,0,0,0.5);
+    padding: 10%;
+    padding-top:1%;
+    padding-bottom:0%;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: relative;
+    }   
+
+.amenities h1 
+    {
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    }
+
+.breakfast 
+    {
+    text-align: justify;
+    width:[320];
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.gym 
+    {
+    text-align: justify;
+    width:[320];
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.pool 
+    {
+    text-align: justify;
+    width:[320];
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.Login
+    {
+    max-width: 50%;
+    background:rgba(0,0,0,0.5);
+    padding: 10%;
+    padding-top:2%;
+    padding-bottom:5%;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: relative;
+    }
+.row 
+    {
+    display: flex; 
+     margin-top: 50px;
+     margin: 0 -16px;
+    }
+input[type=email]
+    {
+     width: 100%;
+     margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    input[type=password]
+    {
+     width: 100%;
+     margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    input[type=tel]
+    {
+     width: 100%;
+     margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+.form-button
+    {
+        background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+    }

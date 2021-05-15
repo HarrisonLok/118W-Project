@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ComfyStay Login/Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <style>
+        body {
+            background-image: url('Hotel\ Background.jpg');
+            background-repeat: no-repeat;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="Home Website.html"><img class="logo" src="ComfyStay Logo White .png"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#main-nagivation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="Home Website.html">Home</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="Login Page.html">Login/Register</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="About Us.html">About Us</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a class="nav-link" href="AvailableRooms.html">Hotel Rooms</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="page-header header container-fluid"></header>
+
+        <div class="rowLogin">
+            <div class="columnLogin">
+                <div id="Login">
+                    <form method="post" action="Home Website.html">
+                        <h1>Already a member? Sign in here</h1>
+                        <label>Email</label>
+                        <input type="email" class="form-input" name="Email-Login" id="Email-Login" Required />
+                        <label>Password</label>
+                        <input type="password" class="form-input" name="Password-Login" id="Password-Login"
+                            Required /><br /><br />
+                        <input type="submit" value="Login">
+                    </form>
+                </div><br />
+            </div>
+            <div class="columnLogin">
+                <div id="Login">
+                    <form method="post" action="ThankYouRegister.html">
+                        <h1>Create a ComfyStay Account</h1>
+                        <label>Email</label>
+                        <input type="email" class="form-input" name="Email-reg" id="Email-reg" Required />
+                        <label>Password</label>
+                        <input type="password" class="form-input" name="Password-reg" id="Password-reg"
+                            Required /><br /><br />
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-input" name="Password2-reg" id="Password2-reg"
+                            Required /><br /><br />
+                        <label>Phone Number</label>
+                        <input type="tel" class="form-input" name="Phone-reg" id="Phone-reg" Required /><br /><br />
+                        <button type="submit" onclick="send()"> REGISTER</button>
+                </div><br />
+            </div>
+        </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCQZVPWYq4ANibY4axAd7-SCY1MP_lOcbs",
+                authDomain: "proj-login-25335.firebaseapp.com",
+                projectId: "proj-login-25335",
+                databaseURL: "https://proj-login-25335-default-rtdb.firebaseio.com/"
+                storageBucket: "proj-login-25335.appspot.com",
+                messagingSenderId: "216344377781",
+                appId: "1:216344377781:web:53d883e83b4de600d581fc"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            var database = firebase.database();
+        </script>
+        <script src="login.js"></script>
+
+    </body>
+    <footer class="page-footer">
+        <div class="container2">
+            <div class="row2">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Guaranteed Satisfaction</h6>
+                    <p>Here at ComfyStay, we believe that all customers should leave satisfied. This means that
+                        if there are any problems with your stay,
+                        we will offer you a refund with no questions asked.
+                        Our policy is to make sure you are happy and that your stay was up to your expectations.
+                        We strive on working with our employees to have them treat our guest with the upmost respect and
+                        generosity.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+                    <p> 1 Washington Sq, San Jose, CA 95192
+                        <br />customersupport@comfystay.com
+                        <br />(408) 924-1000
+                    </p>
+                </div>
+            </div class="footer-copyright text-center">2021 Copyright: www.ComfyStay.com
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</html>
