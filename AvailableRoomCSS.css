@@ -1,0 +1,22 @@
+.container
+{
+font-size: 30px;
+color: white;
+text-align: center;
+justify-content: center;
+background-color: rgba(32, 27, 27, 0.925);
+overflow: hidden;
+}
+
+table
+{
+margin: 0 auto;
+border: 5px solid white; 
+border-radius: 5px;
+text-align: center;
+}
+
+.thead
+{
+color:white;
+}

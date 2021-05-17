@@ -1,0 +1,101 @@
+.menu 
+    {
+    background-color: rgb(32, 27, 27);
+    overflow: hidden;
+    width: 1700px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top:20px;
+    }
+.logo
+    {
+    width: 200x;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -55px;
+    }
+.menu a 
+    {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+  
+.menu a:hover 
+    {
+    background-color: rgb(12, 137, 136);
+    color: black;
+    }
+  
+.menu a.active 
+    {
+    text-decoration: underline;
+    color: white;
+    }
+.Invitation h4 
+    {
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    }
+.Invitation h5
+    {
+    color:rgb(7, 166, 214);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    }
+.Invitation p 
+    {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    }
+.Invitation
+    {
+    max-width: 70%;
+    background:rgba(0,0,0,0.5);
+    padding: 10%;
+    padding-top:1%;
+    padding-bottom:2%;
+    margin: 0 auto;
+    margin-top: 2%;
+    position: relative;
+    }
+.resort
+    {
+    margin-left: 320px;
+    text-align: justify;
+    width:320px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
