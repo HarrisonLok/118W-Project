@@ -71,16 +71,17 @@
           
          </tr>
   
-                 <p><B>Enter Feedback Here</B></p>
-                 <textarea rows="3" cols="60" name="Feedback" form="frmFB" placeholder="Enter text here..." style = "color:black"></textarea>
-
-
-         </tr>
          <tr>
+            <p><B>Enter Feedback Here</B></p>
+   <textarea rows="3" cols="60" name="Feedback" id="Feedback" form="frmFB" placeholder="Enter text here..." style = "color:black"></textarea>
 
-        <input type="submit">
 
-         </tr>
+</tr>
+<tr>
+
+<input type= "submit" value="submit" onclick="send()"></button> 
+
+</tr>
 
          <tr>
             <td>
@@ -105,7 +106,36 @@
         </table>
     </form>
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first 
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>-->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyADU1Y_kJ04vYqj3Nh6usUTgGO5y_kIWRM",
+    authDomain: "comfystay-450bd.firebaseapp.com",
+    projectId: "comfystay-450bd",
+    databaseURL: "https://comfystay-450bd-default-rtdb.firebaseio.com",
+    storageBucket: "comfystay-450bd.appspot.com",
+    messagingSenderId: "681421986053",
+    appId: "1:681421986053:web:fb2b8c0014a70af7b8ff6c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+</script>
+</script>
+<script src="Comments.js"></script>
 </body>
+
 <footer class = "page-footer">
     <div class = "container2">
         <div class = "row2">
